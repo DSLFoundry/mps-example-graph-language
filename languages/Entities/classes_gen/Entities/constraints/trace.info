@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="10,0,30,0" name="Entities.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:813e5508-3787-4c5e-bd34-42c793c18a94(Entities.constraints)/2704515845085609617">
+    <file name="Edge_Constraints.java">
+      <node id="2704515845085609617" at="20,29,21,98" concept="5" />
+      <node id="2704515845085609617" at="24,98,25,135" concept="3" />
+      <node id="2704515845085609617" at="32,44,33,24" concept="4" />
+      <node id="2704515845085673506" at="36,128,37,101" concept="4" />
+      <node id="2704515845085676538" at="37,101,38,36" concept="3" />
+      <node id="2704515845085609617" at="42,7,43,22" concept="4" />
+      <node id="2704515845085609617" at="20,0,23,0" concept="0" trace="Edge_Constraints#()V" />
+      <node id="2704515845085609617" at="31,0,35,0" concept="2" trace="hasPresentation#()Z" />
+      <node id="2704515845085609617" at="35,0,40,0" concept="2" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+      <node id="2704515845085609617" at="29,56,40,10" concept="4" />
+      <node id="2704515845085609617" at="27,0,42,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2704515845085609617" at="25,135,42,7" concept="1" />
+      <node id="2704515845085609617" at="23,0,45,0" concept="2" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="2704515845085609617" at="20,29,21,98" />
+      <scope id="2704515845085609617" at="32,44,33,24" />
+      <scope id="2704515845085610839" at="36,128,38,36">
+        <var name="a" id="2704515845085676541" />
+      </scope>
+      <scope id="2704515845085609617" at="20,0,23,0" />
+      <scope id="2704515845085609617" at="31,0,35,0" />
+      <scope id="2704515845085609617" at="35,0,40,0">
+        <var name="_context" id="2704515845085609617" />
+        <var name="operationContext" id="2704515845085609617" />
+      </scope>
+      <scope id="2704515845085609617" at="29,56,40,10" />
+      <scope id="2704515845085609617" at="27,0,42,0" />
+      <scope id="2704515845085609617" at="24,98,43,22">
+        <var name="references" id="2704515845085609617" />
+      </scope>
+      <scope id="2704515845085609617" at="23,0,45,0" />
+      <unit id="2704515845085609617" at="30,19,40,9" name="Entities.constraints.Edge_Constraints$2" />
+      <unit id="2704515845085609617" at="26,128,42,5" name="Entities.constraints.Edge_Constraints$1" />
+      <unit id="2704515845085609617" at="19,0,46,0" name="Entities.constraints.Edge_Constraints" />
+    </file>
+  </root>
+</debug-info>
+
