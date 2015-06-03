@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Entities.editor.BlackNode_Editor" file="BlackNode_Editor.java">
+  <dependency className="Entities.editor.BlackNode_textual_Editor" file="BlackNode_textual_Editor.java">
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
@@ -15,8 +19,40 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="Entities.editor.Edge_Editor" file="Edge_Editor.java">
+  <dependency className="Entities.editor.Edge_graphical_Editor" file="Edge_graphical_Editor.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EditorCell_DiagramElement" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EndpointUtil" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpointReference" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IConnectionEndpoint_Internal" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IEdgeAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.SNodeEdgeAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.shape.IShape" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="Entities.editor.Edge_textual_Editor" file="Edge_textual_Editor.java">
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
@@ -33,23 +69,72 @@
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="Entities.editor.EditorAspectDescriptorImpl" file="EditorAspectDescriptorImpl.java">
-    <classNode dependClassName="Entities.editor.BlackNode_Editor" />
-    <classNode dependClassName="Entities.editor.Edge_Editor" />
-    <classNode dependClassName="Entities.editor.Graph_Editor" />
-    <classNode dependClassName="Entities.editor.PurpleEdge_Editor" />
-    <classNode dependClassName="Entities.editor.RedNode_Editor" />
+    <classNode dependClassName="Entities.editor.BlackNode_textual_Editor" />
+    <classNode dependClassName="Entities.editor.Edge_graphical_Editor" />
+    <classNode dependClassName="Entities.editor.Edge_textual_Editor" />
+    <classNode dependClassName="Entities.editor.Graph_graphical_Editor" />
+    <classNode dependClassName="Entities.editor.Graph_textual_Editor" />
+    <classNode dependClassName="Entities.editor.Node_graphical_Editor" />
+    <classNode dependClassName="Entities.editor.PurpleEdge_textual_Editor" />
+    <classNode dependClassName="Entities.editor.RedNode_textual_Editor" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.desctiptor.ConceptEditorHintImpl" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorHint" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptDescriptor" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.EditorHintsProvider" />
   </dependency>
-  <dependency className="Entities.editor.Graph_Editor" file="Graph_Editor.java">
+  <dependency className="Entities.editor.Graph_graphical_Editor" file="Graph_graphical_Editor.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.BaseDiagramECell" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.DiagramCreationContext" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.RootDiagramECell" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.jgraph.SubDiagramECell" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.AbstractDiagramAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.CompositePaletteEntryProvider" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.DiagramModel" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IConnectionType" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IPaletteEntryProvider" />
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="Entities.editor.Graph_textual_Editor" file="Graph_textual_Editor.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
@@ -71,8 +156,40 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="Entities.editor.PurpleEdge_Editor" file="PurpleEdge_Editor.java">
+  <dependency className="Entities.editor.Node_graphical_Editor" file="Node_graphical_Editor.java">
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.ContextVariables" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.EditorCell_DiagramElement" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IAccessorFactory" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IBoxAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.IDiagramElementAccessor" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.Port" />
+    <classNode dependClassName="de.itemis.mps.editor.diagram.runtime.model.SNodeBoxAccessor" />
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.Runnable" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime.Wrappers" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="Entities.editor.PurpleEdge_textual_Editor" file="PurpleEdge_textual_Editor.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
@@ -88,8 +205,12 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
-  <dependency className="Entities.editor.RedNode_Editor" file="RedNode_Editor.java">
+  <dependency className="Entities.editor.RedNode_textual_Editor" file="RedNode_textual_Editor.java">
     <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
     <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
