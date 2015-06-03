@@ -64,7 +64,6 @@
       <ref role="3ucXyu" node="2m8nHjVISkt" resolve="b" />
       <ref role="3ucXys" node="2m8nHjVISkD" resolve="c" />
     </node>
-    <node concept="3ucXI9" id="2m8nHjVJEKM" role="3ucXzH" />
     <node concept="3ucXI$" id="2m8nHjVJ5js" role="3ucXzH">
       <property role="TrG5h" value="edge" />
       <ref role="3ucXys" node="2m8nHjVIRnC" resolve="bn" />

@@ -81,19 +81,6 @@
               <ref role="1YBMHb" node="2m8nHjVJbyY" resolve="e" />
             </node>
           </node>
-          <node concept="a7r0C" id="2m8nHjVJyuK" role="3cqZAp">
-            <node concept="Xl_RD" id="2m8nHjVJyuL" role="a7wSD">
-              <property role="Xl_RC" value="Change this!" />
-            </node>
-            <node concept="2OqwBi" id="2m8nHjVJyxh" role="2OEOjV">
-              <node concept="1YBJjd" id="2m8nHjVJyuM" role="2Oq$k0">
-                <ref role="1YBMHb" node="2m8nHjVJbyY" resolve="e" />
-              </node>
-              <node concept="3TrEf2" id="2m8nHjVJyVa" role="2OqNvi">
-                <ref role="3Tt5mk" to="6rtx:2m8nHjVISp8" />
-              </node>
-            </node>
-          </node>
         </node>
         <node concept="1Wc70l" id="2m8nHjVJriG" role="3clFbw">
           <node concept="2OqwBi" id="2m8nHjVJs8a" role="3uHU7w">
